@@ -6,8 +6,12 @@ public class ReadClass {
 
     private final String fileName = "SomeClass.java";
 
+    /**
+     * Создаем объекты классов для считывания с консоли и записи в файл;
+     * Записивыем дефелтное начала класса;
+     * Считываем код метода doWork с консоли.
+     */
     public void readClass() {
-
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
                 BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))){
 

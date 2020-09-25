@@ -15,6 +15,9 @@ public class Main {
         CreateClass createClass = new CreateClass();
         try {
             Class<?> someClass = createClass.loadClass("SomeClass");
+            /**
+             * Запускаем конструктор и запускаем экземпляр класса.
+             */
             Worker worker = (Worker) someClass.getConstructors()[0].newInstance();
             worker.doWork();
         } catch (IllegalAccessException | InstantiationException | InvocationTargetException | ClassNotFoundException e) {
