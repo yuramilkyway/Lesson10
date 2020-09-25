@@ -16,7 +16,7 @@ public class CreateClass extends ClassLoader{
      *      * где он приобретает вид, пригодный для непосредственного исполнения на конкретной
      *      * аппаратной платформе, в частности, компилируется в машинный код процессора для более
      *      * быстрого исполнения (так называемая технология Just-In-Time, сокращенно JIT-компиляция).
-     * @throws ClassNotFoundException
+     * @throws ClassNotFoundException e
      */
     public Class<?> loadClass(String name) throws ClassNotFoundException {
         try {

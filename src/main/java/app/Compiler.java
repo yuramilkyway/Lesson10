@@ -7,7 +7,7 @@ import java.io.File;
 public class Compiler {
     public void runCompiler() {
         File file = new File(new ReadClass().getName());
-        /**
+        /*
          * Класс JavaCompiler создает объекты JavaCompiler.CompilationTask,
          * которые компилируют исходный код из объектов JavaFileObjectSOURCE
          * в объекте JavaFileManager, создавая новые выходные JavaFileObject CLASS
@@ -16,7 +16,7 @@ public class Compiler {
          * возвращает экземпляр компилятора.
          */
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
-        /**
+        /*
          * Запускаем компилятор с Parameters:
          *     in - "standard" input; use System.in if null
          *     out - "standard" output; use System.out if null
